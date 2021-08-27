@@ -11,11 +11,11 @@ joes <- babynames%>%
 # This code filters the baby name data set previously created to only keep the name "Joe"
 
 
-famousJoes <- max(joes$count)
+famous_joes <- max(joes$count)
 # This line makes a variable that finds the highest count in all the years of the joes data.
 
 best_joe<- joes %>% 
-  filter (count == famousJoes) %>%
+  filter (count == famous_joes) %>%
   select(year) %>% 
   pull()
 best_joe
